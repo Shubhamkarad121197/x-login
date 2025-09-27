@@ -31,7 +31,7 @@ const Login = () => {
                     <input type="password" placeholder="Password" required />
                     <br />
                     <button type="submit">Login</button>
-                    {error && <p style={{ color: "red" }}>{error}</p>} {/* Show error */}
+                    {error && <p style={{ color: "red" }}>{error}</p>}
                 </form>
             )}
         </div>
