@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Login = () => {
     const [welcome, setWelcome] = useState(false);
-    const [error, setError] = useState(""); // Add error state
+    const [error, setError] = useState(""); 
 
     const formSubmit = (e) => {
         e.preventDefault();
@@ -10,10 +10,10 @@ const Login = () => {
         let password = e.target[1].value;
         if (username === "username" && password === "password") {
             setWelcome(true);
-            setError(""); // Clear error on success
+            setError(""); 
         } else {
             setWelcome(false);
-            setError("Invalid username or password."); // Set error message
+            setError("Invalid username or password.");
         }
     }
 
