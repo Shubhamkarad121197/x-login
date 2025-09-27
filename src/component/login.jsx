@@ -9,7 +9,10 @@ const Login = () => {
   const formSubmit = (e) => {
     e.preventDefault();
 
-    if (username === "username" && password === "password") {
+    if (
+      (username === "username" || username === "user") &&
+      password === "password"
+    ) {
       setWelcome(true);
       setError("");
     } else {
